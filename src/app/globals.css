@@ -1,0 +1,5 @@
+:root { --font-heading: 'Outfit', sans-serif; --font-sans: 'Plus Jakarta Sans', sans-serif; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100%; }
+body { background: #171918; color: #eee7db; font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+button { font: inherit; }

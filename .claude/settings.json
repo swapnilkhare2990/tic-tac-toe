@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "project": {
+    "name": "sample-next-app",
+    "description": "Next.js 16 App Router application with React 19, TypeScript, and MySQL",
+    "stack": ["Next.js 16", "React 19", "TypeScript 5", "MySQL", "Node.js 20"]
+  },
+  "agents": {
+    "default": "architect",
+    "available": [
+      {
+        "name": "architect",
+        "file": "agents/architect.md",
+        "description": "System design, feature planning, architectural decisions"
+      },
+      {
+        "name": "backend",
+        "file": "agents/backend.md",
+        "description": "API routes, Server Actions, middleware, server-side logic"
+      },
+      {
+        "name": "frontend",
+        "file": "agents/frontend.md",
+        "description": "React components, UI, CSS Modules, client-side interactivity"
+      },
+      {
+        "name": "database",
+        "file": "agents/database.md",
+        "description": "MySQL schema, migrations, queries, data access layer"
+      },
+      {
+        "name": "testing",
+        "file": "agents/testing.md",
+        "description": "Unit, integration, and E2E tests with Vitest and Playwright"
+      },
+      {
+        "name": "security",
+        "file": "agents/security.md",
+        "description": "Security review, auth, input validation, OWASP compliance"
+      },
+      {
+        "name": "devops",
+        "file": "agents/devops.md",
+        "description": "Docker, CI/CD, deployment, environment configuration"
+      },
+      {
+        "name": "performance",
+        "file": "agents/performance.md",
+        "description": "Core Web Vitals, bundle optimization, caching, query performance"
+      },
+      {
+        "name": "code-reviewer",
+        "file": "agents/code-reviewer.md",
+        "description": "Code review, PR feedback, standards enforcement"
+      }
+    ]
+  },
+  "skills": {
+    "available": [
+      {
+        "name": "nodejs",
+        "path": "skills/nodejs/README.md",
+        "description": "Node.js async patterns, error handling, logging, utilities"
+      },
+      {
+        "name": "react",
+        "path": "skills/react/README.md",
+        "description": "React 19 patterns, hooks, RSC, Server Actions, TypeScript"
+      },
+      {
+        "name": "mongodb",
+        "path": "skills/mongodb/README.md",
+        "description": "MongoDB native driver and Mongoose patterns (future use)"
+      },
+      {
+        "name": "api-design",
+        "path": "skills/api-design/README.md",
+        "description": "REST conventions, route handlers, pagination, validation, OpenAPI"
+      },
+      {
+        "name": "testing",
+        "path": "skills/testing/README.md",
+        "description": "Vitest, React Testing Library, Playwright setup and patterns"
+      },
+      {
+        "name": "security",
+        "path": "skills/security/README.md",
+        "description": "OWASP Top 10, auth, SQL injection, XSS, rate limiting"
+      }
+    ]
+  },
+  "conventions": {
+    "language": "TypeScript",
+    "noJsInSrc": true,
+    "styleFramework": "Vanilla CSS (CSS Modules)",
+    "noTailwind": true,
+    "componentExports": "named (except pages — default export)",
+    "serverComponentsDefault": true,
+    "preferServerActions": true
+  },
+  "tools": {
+    "linter": "eslint",
+    "formatter": "prettier",
+    "typeCheck": "npx tsc --noEmit",
+    "testRunner": "vitest",
+    "e2eRunner": "playwright",
+    "packageManager": "npm"
+  }
+}
